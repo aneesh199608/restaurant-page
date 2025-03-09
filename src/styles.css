@@ -30,6 +30,7 @@
     --secondary-button: #eee; 
     --text-color: #333;
     --background-color: #f8f8f8;
+    --secondary-font: 'Ambit', sans-serif;
 }
 
 
@@ -45,6 +46,8 @@ body {
 
 #content {
     display: flex;
+    max-width: 1200px;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     gap: 16px;
@@ -80,13 +83,57 @@ nav{
     font-weight: bold;
 }
 p {
-    font-family: "Ambit", sans-serif;
+    font-family: var(--secondary-font);
     margin: 0;
     max-width: 600px;
     text-align: center;
 }
 
 img {
-    width: 600px;
+    max-width: 600px;
+    width: 90%;
     border-radius: 8px;
 }
+
+.menu-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 24px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 8px;
+    background-color: #FCF6DC;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.menu-item h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--primary-green);
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    height: 4rem;
+}
+
+.menu-item p {
+    margin: 0;
+    color: var(--text-color);
+    font-size: 1rem;
+    text-align: left;
+    height: 4rem;
+}
+
+.price {
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
