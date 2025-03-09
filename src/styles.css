@@ -1,4 +1,86 @@
+@font-face {
+    font-family: 'Gatefold';
+    src: url('./assets/fonts/Gatefold-Demibold.woff2') format('woff2'),
+        url('./assets/fonts/Gatefold-Demibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ambit';
+    src: url('./assets/fonts/Ambit-Regular.woff2') format('woff2'),
+        url('./assets/fonts/Ambit-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ambit';
+    src: url('./assets/fonts/Ambit-Bold.woff2') format('woff2'),
+        url('./assets/fonts/Ambit-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --primary-green: #00211a;
+    --text-color: #333;
+    --background-color: #f8f8f8;
+}
+
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin: 48px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+h1 {
+    font-family: 'Gatefold', sans-serif;
+    color: var(--primary-green);
+    margin: 0;
+}
+
+header {
+    width: 100%;
+}
+nav{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center ;
+}
+button {
+    background-color: var(--primary-green);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+p {
+    font-family: "Ambit", sans-serif;
+    margin: 0;
+    max-width: 600px;
+    text-align: center;
+}
+
+img {
+    width: 600px;
+    border-radius: 8px;
 }
