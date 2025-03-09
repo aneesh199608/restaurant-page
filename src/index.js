@@ -1,5 +1,6 @@
 import "./styles.css";
 import createHomePage from "./home.js";
+import createAboutPage from "./about.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     const content = document.getElementById("content");
@@ -17,11 +18,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 break;
             case "Menu":
                 createMenuPage();
-                document.getElementById("home-btn").classList.add("active");
+                document.getElementById("menu-btn").classList.add("active");
                 break;
             case "About":
                 createAboutPage();
-                document.getElementById("home-btn").classList.add("active");
+                document.getElementById("about-btn").classList.add("active");
                 break;
         }
     }
@@ -33,4 +34,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     setActiveTab("Home");
 
-})
+});
