@@ -64,15 +64,20 @@ nav{
     align-items: center;
     justify-content: center ;
 }
-button {
-    background-color: var(--primary-green);
-    color: white;
+.tab-btn {
+    background-color: #eee;
     border: none;
-    padding: 8px 16px;
-    border-radius: 4px;
+    padding: 10px 20px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
 }
 
+.tab-btn.active {
+    background-color: var(--primary-green);
+    color: white;
+    font-weight: bold;
+}
 p {
     font-family: "Ambit", sans-serif;
     margin: 0;
